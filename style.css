@@ -1,0 +1,105 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(44, 44, 44);
+    font-size: 24px;
+    font-weight: 1;
+    background: linear-gradient(270deg, #ADC4CE, #D7C0AE, #96B6C5);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 60s ease infinite;
+	-moz-animation: Gradient 60s ease infinite;
+	animation: Gradient 60s ease infinite;
+}
+	
+    
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.profile-img {
+    border-radius: 50%;
+    border: 1rem solid #96B6C5;
+    height: 20rem;
+    width: 20rem;
+   margin-top: 2em;
+   box-shadow: 5px 5px 100px 0px #939191;
+   
+    
+}
+
+.fontH {
+    font-size: 3rem;
+    font-weight: bolder;
+ }
+
+ .font-features {
+    font-size: 1.5 rem;
+    background-color: #ADC4CE;
+    color: rgb(44, 44, 44);
+    font-weight: lighter;
+ }
+ 
+
+
+.list-style-none {
+    list-style: none;
+    display: inline-block;
+    gap: 25px;
+    white-space: nowrap;
+}
+
+ @media (max-width: 767px) {
+    body {
+        font-size: medium;
+    }
+    .section-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .profile-img {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .fontH {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .font-features {
+        font-size: 1 rem;
+    }
+   
+ }
+ @media (min-width: 768px) and (max-width: 1000px) {
+    .details {
+        font-size: medium;
+    }
+    .fontH {
+        font-size: 2rem;
+    }
+    .profile-img {
+        height: 15rem;
+        width: 15rem;
+    }
+ }
